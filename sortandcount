@@ -1,0 +1,18 @@
+a = input("Choose operation: ")
+if a == 'sort':
+    input_list = input("Enter some words: ")
+    words = input_list.split()
+    words.sort()
+    print("Yours sorted words: ")
+    for word in words:
+        print(word)
+elif a == 'count':
+    alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzАБВГДЕЄЖЗИІЇКЛМНОПРСТУФХЦЧШЩЬЮЯабвгдеєжзиіїклмнопрстухфцчшщьюя"
+    text = input("Enter your text: ")
+    for char in alphabet:
+        count = text.count(char)
+        if count > 0:
+            print(char, count)
+else:
+    print("Unsupported operation!!!")
+
